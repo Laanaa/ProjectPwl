@@ -17,10 +17,11 @@ class CreateQrcodesTable extends Migration
             $table->increments('id');
             $table->integer('user_id');
             $table->string('website')->nullable();
-            $table->string('product_name');
+            $table->string('company_name');
             $table->string('product_url')->nullable();
             $table->string('company_name');
             $table->string('callback_url');
+            $table->string('qrcode_path')->nullable();
             $table->float('amount', 10, 4);
             $table->tinyInteger('status');
             $table->timestamps();
